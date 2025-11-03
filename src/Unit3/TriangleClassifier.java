@@ -11,13 +11,14 @@ public class TriangleClassifier {
     public static String classifyTriangle(int a, int b, int c){
         if(a + b > c && b + c > a && c + a > b){
             if(a == b && b == c){
-                return "Equilateral triangle";
+               return "Equilateral Triangle";
             }
             else if (a == b || b == c || c == a){
-                return "Isosceles triangle";
+                return "Isosceles Triangle";
             }
-            else return "Scalene triangle";
+            else return "Scalene Triangle";
         }
+
         return "Not a triangle";
     }
 }
